@@ -1,0 +1,12 @@
+<h1>List of Blogs</h1>
+
+<ul>
+  <% @blogs.each do |blog| %>
+    <li>
+       <a href="/blogs/<%= blog.id %>">
+        <%= blog.title %>
+      </a>
+      <%= blog.body %>
+    </li>
+  <% end %>
+</ul>
